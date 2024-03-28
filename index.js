@@ -17,6 +17,9 @@ app.get('/scores', (_, res) => {
         let counts = { "female": 0, "male": 0, "diverse": 0 };
     
         data.forEach(response => {
+            if (!response.gender || typeof response.score !== 'number') {
+                return res.status(500).send('Internal server error');
+            }
             if (response.gender in counts) {
                 counts[response.gender]++;
                 scores[response.gender + "Score"] += response.score;
@@ -34,6 +37,7 @@ app.get('/scores', (_, res) => {
     
         return res.status(200).json(scores);
     } catch (error) {
+        console.error(error);
         return res.status(500).send('Internal server error');
     }
 });

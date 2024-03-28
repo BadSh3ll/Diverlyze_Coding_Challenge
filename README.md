@@ -20,7 +20,7 @@ These instructions will get you a copy of the project up and running on your loc
 3. Install the dependencies: `yarn`
 
 ## Usage
-Before running the server, make sure to provide a `survey.json` file in the root directory of the project, otherwise it will throw an error. This file should contain the survey data in the following format:
+Before running the server, make sure to provide a valid `survey.json` file in the root directory of the project, otherwise it will throw an error. This file should contain the survey data in the following format:
 
 ```json
 [
