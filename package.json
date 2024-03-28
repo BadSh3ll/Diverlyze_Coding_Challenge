@@ -1,0 +1,37 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0"
+  },
+  "name": "diverlyze_coding_challenge",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iamthienthanh/Diverlyze_Coding_Challenge.git"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "author": "Thanh Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iamthienthanh/Diverlyze_Coding_Challenge/issues"
+  },
+  "homepage": "https://github.com/iamthienthanh/Diverlyze_Coding_Challenge#readme",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.0",
+    "seedrandom": "^3.0.5",
+    "supertest": "^6.3.4"
+  }
+}
